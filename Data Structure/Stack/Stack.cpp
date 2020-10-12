@@ -1,3 +1,14 @@
+/*
+Note: 
+
+Keep the usage of in-built function to the minimum
+Add/Optimize  features
+Please follow best coding practices
+Add comments if necessary
+And make the Code Bug free
+
+*/
+
 #include<iostream>
 using namespace std;
 
