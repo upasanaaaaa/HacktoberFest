@@ -1,3 +1,4 @@
+package Algorithms.BubbleSort;
 class BubbleSort 
 { 
     void bubbleSort(int arr[]) 
