@@ -1,5 +1,6 @@
 // Java program for implementation of QuickSort 
 // Find the bug and fix it
+package Algorithms.QuickSort;
 class QuickSort 
 { 
 

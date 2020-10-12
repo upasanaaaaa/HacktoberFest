@@ -1,3 +1,4 @@
+package Algorithms.BinarySearch;
 
 class BinarySearch { 
 	int IterativeBinarySearch(int arr[], int x) 
@@ -24,9 +25,10 @@ class BinarySearch {
 		return -1; 
 	} 
 
-     int binarySearch(int arr[], int l, int r, int x) 
+     int RecursiveBinarySearch(int arr[], int l, int r, int x) 
     { 
-        //write the code to implement Recursive BinarySearch
+		//write the code to implement Recursive BinarySearch
+		return 0;
     }
 
 	public static void main(String args[]) 
@@ -37,7 +39,7 @@ class BinarySearch {
 		int x = 10; 
         int y = 5;
 		int result1 = ob.IterativeBinarySearch(arr, x); 
-		int result2 = ob.RecursiveBinarySearch(arr, y); 
+		int result2 = ob.RecursiveBinarySearch(arr, 0, n - 1, y); 
 		if (result1 == -1) 
 			System.out.println("Element not present"); 
 		else
