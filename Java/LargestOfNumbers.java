@@ -10,6 +10,14 @@ public class LargestOfNumbers {
     static int largestOfThree( int num1, int num2, int num3 ) {
         return largestOfTwo(largestOfTwo(num1,num2),num3);
     }
+    
+    static int largestOfFour( int num1, int num2, int num3,int num4 ) {
+        return largestOfTwo(largestOfThree(num1,num2,num3),num4);
+    }
+    
+    static int largestOfFive( int num1, int num2, int num3,int num4,int num5 ) {
+        return largestOfTwo(largestOfFour(num1,num2,num3,num4),num5);
+    }
 
 
 
@@ -25,9 +33,9 @@ public class LargestOfNumbers {
 
         /* Please create below functions to find the largest among the numbers */
 
-        // System.out.println( "Largest among n1, n2, n3 : "+largestOfThree( n1, n2, n3 ) ) ;
-        // System.out.println( "Largest among n1, n2, n3, n4 : "+largestOfFour( n1, n2, n3, n4 ) ) ;
-        // System.out.println( "Largest among n1, n2, n3, n4, n5 : "+largestOfFive( n1, n2, n3, n4, n5 ) ) ;
+        System.out.println( "Largest among n1, n2, n3 : "+largestOfThree( n1, n2, n3 ) ) ;
+        System.out.println( "Largest among n1, n2, n3, n4 : "+largestOfFour( n1, n2, n3, n4 ) ) ;
+        System.out.println( "Largest among n1, n2, n3, n4, n5 : "+largestOfFive( n1, n2, n3, n4, n5 ) ) ;
         
     }
 
