@@ -8,8 +8,7 @@ public class LargestOfNumbers {
     }
 
     static int largestOfThree( int num1, int num2, int num3 ) {
-        // Complete the function
-        return 0;
+        return largestOfTwo(largestOfTwo(num1,num2),num3);
     }
 
 
