@@ -7,6 +7,8 @@ int largestOfTwo( int num1, int num2 ) {
 
 int largestOfThree( int num1, int num2, int num3 ) {
     // Complete the function
+    int temp = largestOfTwo( num1, num2 );
+    return largestOfTwo( temp, num3 );
 
 }
 
@@ -18,12 +20,12 @@ void main() {
     int n4 = 500;
     int n5 = -50;
 
-    printf( "Largest among n1, n2 : %d", largestOfTwo( n1, n2 ) ) ;
+    printf( "Largest among n1, n2 : %d\n", largestOfTwo( n1, n2 ) ) ;
 
     /* Please create below functions to find the largest among the numbers */
 
-    // printf( "Largest among n1, n2, n3 : %d", largestOfThree( n1, n2, n3 ) ) ;
-    // printf( "Largest among n1, n2, n3, n4 : %d", largestOfFour( n1, n2, n3, n4 ) ) ;
-    // printf( "Largest among n1, n2, n3, n4, n5 : %d", largestOfFive( n1, n2, n3, n4, n5 ) ) ;
+    printf( "Largest among n1, n2, n3 : %d\n", largestOfThree( n1, n2, n3 ) ) ;
+    // printf( "Largest among n1, n2, n3, n4 : %d\n", largestOfFour( n1, n2, n3, n4 ) ) ;
+    // printf( "Largest among n1, n2, n3, n4, n5 : %d\n", largestOfFive( n1, n2, n3, n4, n5 ) ) ;
     
 }
