@@ -6,8 +6,7 @@ def largestOfTwo(num1, num2):
 
 def largestOfThree(num1, num2, num3):
     # Complete the function
-    temp = largestOfTwo( num1, num2)
-    return largestOfTwo( temp, num3 )
+    return largestOfTwo( largestOfTwo( num1, num2), num3 )
 
 
 n1 = 50
