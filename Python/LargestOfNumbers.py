@@ -8,6 +8,13 @@ def largestOfThree(num1, num2, num3):
     # Complete the function
     return largestOfTwo( largestOfTwo( num1, num2), num3 )
 
+def largestOfFour( num1, num2, num3, num4 ):
+    return largestOfTwo(largestOfThree(num1,num2,num3),num4)
+
+def largestOfFive( num1, num2, num3, num4,num5 ):
+    return largestOfTwo(largestOfFour(num1,num2,num3,num4),num5)
+
+
 
 n1 = 50
 n2 = 400
@@ -22,5 +29,5 @@ Please create below functions to find the largest among the numbers
 """
 
 print( "Largest among n1, n2, n3 : ", largestOfThree( n1, n2, n3 ) ) 
-# print( "Largest among n1, n2, n3, n4 : ", largestOfFour( n1, n2, n3, n4 ) ) ;
-# print( "Largest among n1, n2, n3, n4, n5 : ", largestOfFive( n1, n2, n3, n4, n5 ) ) ;
+print( "Largest among n1, n2, n3, n4 : ", largestOfFour( n1, n2, n3, n4 ) ) 
+print( "Largest among n1, n2, n3, n4, n5 : ", largestOfFive( n1, n2, n3, n4, n5 ) ) 
