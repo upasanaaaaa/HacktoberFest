@@ -25,5 +25,6 @@ def fibUsingRecursion(n):
 n = input("How many numbers from fib series? : ")
 
 fibUsingLoop(n)
+fibUsingRecursion(n)
 
 
