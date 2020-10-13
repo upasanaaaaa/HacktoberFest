@@ -4,7 +4,10 @@ using namespace std;
   
 void bubbleSort(int arr[], int n)  
 {  
-   //complete the function to implement bubble sort
+    for i in range(n): 
+        for j in range(0, n-i-1): 
+            if arr[j] > arr[j+1] : 
+                arr[j], arr[j+1] = arr[j+1], arr[j]
 }  
   
 /* Function to print an array */
