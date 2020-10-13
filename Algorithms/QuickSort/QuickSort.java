@@ -42,8 +42,8 @@ class QuickSort
 
 			// Recursively sort elements before 
 			// partition and after partition 
-			sort(arr, high, pi); 
-			sort(arr, pi, low); 
+           		 sort(arr, low, pi-1); 
+           		 sort(arr, pi+1, high); 
 		} 
 	} 
 
