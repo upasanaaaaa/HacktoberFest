@@ -9,10 +9,11 @@ int largestOfTwo( int num1, int num2 ) {
 
 int largestOfThree( int num1, int num2, int num3 ) {
     // Complete the function
-
+    int temp = largestOfTwo( num1, num2 );
+    return largestOfTwo( temp, num3 );
 }
 
-void main() {
+int main() {
 
     int n1 = 50;
     int n2 = 400;
@@ -24,8 +25,9 @@ void main() {
 
     /* Please create below functions to find the largest among the numbers */
 
-    // cout << "Largest among n1, n2, n3 : " << largestOfThree( n1, n2, n3 ) ;
+    cout << "\nLargest among n1, n2, n3 : " << largestOfThree( n1, n2, n3 ) ;
     // cout << "Largest among n1, n2, n3, n4 : " << largestOfFour( n1, n2, n3, n4 ) ;
     // cout << "Largest among n1, n2, n3, n4, n5 : " << largestOfFive( n1, n2, n3, n4, n5 ) ;
+    return 0;
     
 }
