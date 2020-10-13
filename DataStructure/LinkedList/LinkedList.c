@@ -1,3 +1,4 @@
+
 /*
 Note:
 
@@ -62,11 +63,19 @@ void print( Node* root ) {
 
 // Test and Complete the following methods
 
-/*
-void printReverse(){
+void printReverse(Node* head)
+{
+    // Base case
+    if (head == NULL)
+    return;
 
+    // print the list after head node
+    printReverse(head->next);
+
+    // After everything else is printed, print head
+    printf("%d ", head->data );
 }
-
+/*
 void reverse() {
     // Reverse the content of the list
 
@@ -76,12 +85,22 @@ void sort(){
     // sort elements of list ( ascending )
 
 }
-
-void clear() {
+*/
+void clear(Node *head) {
     // delete all the elements from the list
+    Node *temp;
+
+    while(head != NULL)
+    {
+        temp = head;
+        head = head->next;
+
+        free(temp);
+    }
+    printf("\nAll the elements have been deleted");
 }
 
-*/
+
 
 
 int main() {
@@ -100,7 +119,10 @@ int main() {
 
     int ind = 1 ;
     Node *node = elementAt( LinkedList, ind );
-    printf( "Element at index %d: %d", ind, node->data ) ;
+    printf( "Element at index %d: %d\n", ind, node->data ) ;
+    printf("Linked list in reverse order: ");
+    printReverse(LinkedList);
+    clear(LinkedList);
 
     return 0;
 }
