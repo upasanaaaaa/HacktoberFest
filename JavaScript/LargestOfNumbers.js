@@ -4,7 +4,7 @@ function largestOfTwo(num1, num2) {
 }
 
 function largestOfThree(num1, num2, num3) {
-  // Complete the function
+  return largestOfTwo( largestOfTwo( num1, num2), num3 )
 }
 
 var n1 = 50,
