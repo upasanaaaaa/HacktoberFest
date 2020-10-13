@@ -1,4 +1,3 @@
-# Solve the bugs if there are any
 def fibUsingLoop(n):
 
     first = 0
