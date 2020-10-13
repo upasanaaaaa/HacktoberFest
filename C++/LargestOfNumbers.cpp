@@ -9,8 +9,7 @@ int largestOfTwo( int num1, int num2 ) {
 
 int largestOfThree( int num1, int num2, int num3 ) {
     // Complete the function
-    int temp = largestOfTwo( num1, num2 );
-    return largestOfTwo( temp, num3 );
+    return largestOfTwo( largestOfTwo( num1, num2), num3 )
 }
 
 int main() {
