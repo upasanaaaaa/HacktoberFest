@@ -1,3 +1,4 @@
+
 /*
 Note:
 
@@ -84,12 +85,22 @@ void sort(){
     // sort elements of list ( ascending )
 
 }
-
-void clear() {
+*/
+void clear(Node *head) {
     // delete all the elements from the list
+    Node *temp;
+
+    while(head != NULL)
+    {
+        temp = head;
+        head = head->next;
+
+        free(temp);
+    }
+    printf("\nAll the elements have been deleted");
 }
 
-*/
+
 
 
 int main() {
@@ -111,5 +122,7 @@ int main() {
     printf( "Element at index %d: %d\n", ind, node->data ) ;
     printf("Linked list in reverse order: ");
     printReverse(LinkedList);
+    clear(LinkedList);
+
     return 0;
 }
