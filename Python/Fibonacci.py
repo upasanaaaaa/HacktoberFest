@@ -22,7 +22,7 @@ def fibUsingRecursion(n):
         return 1
     else: 
         return fibUsingRecursion(n-1)+fibUsingRecursion(n-2)
-n = input("How many numbers from fib series? : ")
+n = int(input("How many numbers from fib series? : "))
 
 fibUsingLoop(n)
 fibUsingRecursion(n)
