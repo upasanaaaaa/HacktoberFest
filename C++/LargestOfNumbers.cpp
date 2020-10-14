@@ -7,15 +7,15 @@ int largestOfTwo( int num1, int num2 ) {
     return num2;
 }
 
-void largestOfThree( int n1, int n2, int n3 ) {
-     if((n1 >= n2) && (n1 >= n3))
-        cout << n1<<endl;
-    else if ((n2 >= n1) && (n2 >= n3))
-        cout<< n2<<endl;
-    else
-        cout<< n3<<endl;
+int largestOfThree( int num1, int num2, int num3 ) {
+    return largestOfTwo( largestOfTwo( num1, num2), num3 );
 }
-
+int largestOfFour(int num1,int num2,int num3,int num4){
+    return largestOfThree(largestOfTwo( num1, num2) ,num3, num4);
+}
+int largestOfFive(int num1,int num2,int num3,int num4,int num5 ){
+    return largestOfFour(largestOfTwo(num1,num2),num3,num4,num5);
+}
 int main() {
 
     int n1 = 50;
@@ -24,14 +24,13 @@ int main() {
     int n4 = 500;
     int n5 = -50;
 
-    cout << "Largest among n1, n2 : " << largestOfTwo( n1, n2 )<<endl ;
+    cout << "Largest among n1, n2 : " << largestOfTwo( n1, n2 ) ;
 
     /* Please create below functions to find the largest among the numbers */
 
-    cout << "\nLargest among n1, n2, n3 : " ;
-    largestOfThree( n1, n2, n3 ) ;
-    // cout << "Largest among n1, n2, n3, n4 : " << largestOfFour( n1, n2, n3, n4 ) ;
-    // cout << "Largest among n1, n2, n3, n4, n5 : " << largestOfFive( n1, n2, n3, n4, n5 ) ;
+    cout << "\nLargest among n1, n2, n3 : " << largestOfThree( n1, n2, n3 )<<endl ;
+    cout << "Largest among n1, n2, n3, n4 : " << largestOfFour( n1, n2, n3, n4 )<<endl ;
+    cout << "Largest among n1, n2, n3, n4, n5 : " << largestOfFive( n1, n2, n3, n4, n5 )<<endl ;
     return 0;
     
 }
