@@ -1,3 +1,14 @@
+/*
+Note:
+
+Keep the usage of in-built function to the minimum
+addOneEle/Optimize  features
+Please follow best coding practices
+addOneEle comments if necessary
+And make the Code Bug free
+
+*/
+
 // C program for array implementation of stack 
 #include <limits.h> 
 #include <stdio.h> 
@@ -84,4 +95,4 @@ int main()
 	print_stack(stack);
 
 	return 0; 
-} 
+}
